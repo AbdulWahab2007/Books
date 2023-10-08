@@ -1,69 +1,181 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+body{
+    margin: 0px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 0px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    height: 230px;
+    background-image: linear-gradient(to bottom, #b2cee2, white);
+    margin: 20px;
+}
+.Image{
+    position: relative;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: -50px;
+    box-shadow: 0 0 3px  black;
+    transition: 0.2s;
+}
+.Image:hover{
+    box-shadow: 0 0 8px  black;
+    transform: scale(1.1);
+}
+.Title{
+    font-size: 35px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+.Title:hover{
+    cursor: pointer;
+}
+.Author{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "'Ubuntu', sans-serif";
+    margin: 5px;
+}
+.Button{
+    background-color: #fff9ea;
+    border: 0px;
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 7px;
+}
+.Desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Main{
+    display: flex;
+}
+.SidebarContainer{
+    display: flex;
+    justify-content: center;
+    width: 19%;
+}
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+}
+.Categories{
+    width: 100%;   
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat, "Roboto", "Noto", sans-serif;
+    transition: 0.2s;
+}
+.Categories:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.Categories:focus{
+    background-color: black;
+    color: white;
+}
+.Logo{
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 25px;
+}
+.Heading{
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: Montserrat, "Roboto", "Noto", sans-serif;
+    padding-left: 25px;
+}
+.Content{
+    display: flex;
+    flex-direction: column;
+    width: 81%;
+}
+.SearchContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.Search{
+    border: 0px;
+    width: 90%;
+    height: 50px;
+    margin: 15px;
+    font-family: Montserrat, "Roboto", "Noto", sans-serif;
+    font-weight: 500;
+}
+.Search:focus{
+    outline: none;
+}
+.PWAlogo{
+    height: 20px;
+}
+.SearchResults{
+    display: flex;
+    flex-direction: column;
+}
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .Main {
+      flex-direction: column;
+    }
+    .Content{
+        width: 100%;
+    }
+    .SidebarContainer{
+        width: 100%;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .row2{
+        flex-direction: column;
+    }
+  } 
+  
