@@ -9,12 +9,12 @@ export default function Card(props) {
     <>
         <div className="card">
           <a href="#">
-            <img className="Image" src="https://books.google.com/books/content?id=d2lHj3-Bw2MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="" />
+            <img className="Image" src={props.img} alt="" />
           </a>
             <div className="Desc">
               <a href='#' className="Title">{props.title}</a>
-              <a href='#' className="Author">Ann Swidler</a>
-            < button className="Button">Family and Relationships</button>
+              <a href='#' className="Author">{props.author}</a>
+            < button className="Button">{props.category}</button>
             </div>
         </div>
     </>
