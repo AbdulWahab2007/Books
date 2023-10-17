@@ -18,7 +18,7 @@ export default function MainContent() {
           <Card title="Talk Of Love" />
           <Card title="Talk Of Love" />
   </div>*/}
-        <div className="Fiction">
+        <div className="Category">
           <div className='CategoryTop'>
             <h2>Fiction</h2>
             <div className="PrevNext">
@@ -36,11 +36,11 @@ export default function MainContent() {
             <Card img="https://books.google.com/books/content?id=L88qEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="Sherlock Holmes - The Valley Of Fear" author="Arthur Conana Doyle" category="Fiction" />
             <Card img="https://books.google.com/books/content?id=TayGZxfYF_EC&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="Future Shock" author="Alvin Toffler" category="Fiction" />
             <Card img="https://books.google.com/books/content?id=In8mDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="How To Stop Time" author="Matt Haig" category="Fiction" />
-            <Card img ="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
+            <Card img="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
           </div>
         </div>
 
-        <div className="Fiction">
+        <div className="Category">
           <div className='CategoryTop'>
             <h2>Poetry</h2>
             <div className="PrevNext">
@@ -58,11 +58,11 @@ export default function MainContent() {
             <Card img="https://books.google.com/books/content?id=L88qEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="Sherlock Holmes - The Valley Of Fear" author="Arthur Conana Doyle" category="Fiction" />
             <Card img="https://books.google.com/books/content?id=TayGZxfYF_EC&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="Future Shock" author="Alvin Toffler" category="Fiction" />
             <Card img="https://books.google.com/books/content?id=In8mDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="How To Stop Time" author="Matt Haig" category="Fiction" />
-            <Card img ="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
+            <Card img="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
           </div>
         </div>
 
-        <div className="Fiction">
+        <div className="Category">
           <div className='CategoryTop'>
             <h2>Fantasy</h2>
             <div className="PrevNext">
@@ -80,11 +80,11 @@ export default function MainContent() {
             <Card img="https://books.google.com/books/content?id=L88qEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="Sherlock Holmes - The Valley Of Fear" author="Arthur Conana Doyle" category="Fiction" />
             <Card img="https://books.google.com/books/content?id=TayGZxfYF_EC&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="Future Shock" author="Alvin Toffler" category="Fiction" />
             <Card img="https://books.google.com/books/content?id=In8mDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="How To Stop Time" author="Matt Haig" category="Fiction" />
-            <Card img ="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
+            <Card img="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
           </div>
         </div>
 
-        <div className="Fiction">
+        <div className="Category">
           <div className='CategoryTop'>
             <h2>Romance</h2>
             <div className="PrevNext">
@@ -102,10 +102,10 @@ export default function MainContent() {
             <Card img="https://books.google.com/books/content?id=L88qEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="Sherlock Holmes - The Valley Of Fear" author="Arthur Conana Doyle" category="Fiction" />
             <Card img="https://books.google.com/books/content?id=TayGZxfYF_EC&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="Future Shock" author="Alvin Toffler" category="Fiction" />
             <Card img="https://books.google.com/books/content?id=In8mDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="How To Stop Time" author="Matt Haig" category="Fiction" />
-            <Card img ="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
+            <Card img="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
           </div>
-        </div>  
-
+        </div>
+        <a href="https://github.com/AbdulWahab2007/Books" target='_blank' className='GitHubLink'><img src="https://liyasthomas.github.io/books/icons/github.svg" alt="" /></a>
       </div>
     </>
   )

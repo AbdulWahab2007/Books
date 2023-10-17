@@ -7,16 +7,16 @@ export default function Card(props) {
   */
   return (
     <>
-        <div className="card">
-          <a href="#">
-            <img className="Image" src={props.img} alt="" />
-          </a>
-            <div className="Desc">
-              <a href='#' className="Title">{props.title}</a>
-              <a href='#' className="Author">{props.author}</a>
-            < button className="Button">{props.category}</button>
-            </div>
+      <div className="card">
+        <a href="#">
+          <img className="Image" src={props.img} alt="" />
+        </a>
+        <div className="Desc">
+          <a href='#' className="Title">{props.title}</a>
+          <a href='#' className="Author">{props.author}</a>
+          < button className="Button">{props.category}</button>
         </div>
+      </div>
     </>
   )
 }

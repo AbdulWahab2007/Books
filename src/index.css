@@ -1,29 +1,46 @@
-body{
+body {
     margin: 0px;
 }
-.card{
+
+::-webkit-scrollbar {
+    height: 3px;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d2d2d2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #878787;
+}
+
+.card {
     display: flex;
     flex: 1;
     flex-direction: row;
-    min-width: 350px;
+    min-width: 400px;
     margin: 18px;
     padding: 30px;
     border: 0px;
     border-radius: 40px;
     background-image: linear-gradient(to bottom, #b2cee2, white);
 }
-.Image{
+
+.Image {
     border-radius: 5px;
     margin-right: 20px;
     margin-top: -50px;
-    box-shadow: 0 0 3px  black;
+    box-shadow: 0 0 3px black;
     transition: 0.2s;
 }
-.Image:hover{
-    box-shadow: 0 0 8px  black;
+
+.Image:hover {
+    box-shadow: 0 0 8px black;
     transform: scale(1.1);
 }
-.Title{
+
+.Title {
     font-size: 28px;
     color: black;
     text-decoration: none;
@@ -35,14 +52,16 @@ body{
     -webkit-line-clamp: 2;
 
 }
-.Author{
+
+.Author {
     text-decoration: none;
     color: black;
     font-size: 20px;
     margin: 5px;
     font-family: "'Ubuntu', sans-serif";
 }
-.Button{
+
+.Button {
     font-size: 15px;
     padding: 3px;
     background-color: #fff9ea;
@@ -51,30 +70,36 @@ body{
     margin-top: 7px;
     font-family: 'Ubuntu', sans-serif;
 }
-.Desc{
+
+.Desc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 10px;
 }
-.Main{
+
+.Main {
     display: flex;
     flex-direction: row;
 }
-.SidebarContainer{
+
+.SidebarContainer {
     display: flex;
     justify-content: center;
     width: 19%;
+    position: fixed;
 }
-.Sidebar{
+
+.Sidebar {
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100%;
     padding: 30px;
 }
-.Categories{
-    width: 100%;   
+
+.Categories {
+    width: 100%;
     height: 45px;
     border-radius: 20px;
     margin-top: 15px;
@@ -89,21 +114,25 @@ body{
     font-family: Montserrat, "Roboto", "Noto", sans-serif;
     transition: 0.2s;
 }
-.Categories:hover{
+
+.Categories:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.Categories:focus{
+
+.Categories:focus {
     background-color: black;
     color: white;
 }
-.Logo{
+
+.Logo {
     font-weight: 900;
     color: black;
     text-decoration: none;
     font-size: 25px;
     padding-left: 25px;
 }
-.Heading{
+
+.Heading {
     color: rgba(0, 0, 0, 0.5);
     margin-top: 30px;
     margin-bottom: 30px;
@@ -112,18 +141,22 @@ body{
     font-family: Montserrat, "Roboto", "Noto", sans-serif;
     padding-left: 25px;
 }
-.Content{
+
+.Content {
     display: flex;
     flex-direction: column;
+    margin-left: 19%;
     width: 81%;
 }
-.SearchContainer{
+
+.SearchContainer {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100px;
 }
-.Search{
+
+.Search {
     border: 0px;
     width: 90%;
     height: 50px;
@@ -131,44 +164,57 @@ body{
     font-family: Montserrat, "Roboto", "Noto", sans-serif;
     font-weight: 500;
 }
-.Search:focus{
+
+.Search:focus {
     outline: none;
 }
-.PWAlogo{
+
+.PWAlogo {
     height: 20px;
 }
-.SearchResults{
+
+.SearchResults {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.Fiction{
+
+.Category {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
-.CategoryBooks{
+
+.CategoryBooks {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
-.CategoryTop{
+
+.CategoryTop {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.CategoryTop h2{
+
+.CategoryTop h2 {
     font-size: 40px;
     font-weight: 800;
+    margin-left: 40px;
     font-family: Montserrat, "Roboto", "Noto", sans-serif;
     margin-top: 70px;
     margin-bottom: 70px;
 }
-.PrevNext{
+
+.PrevNext {
     display: flex;
+    margin-right: 20px;
 }
-.PrevNext button    {
+
+.PrevNext button {
     display: inline-flex;
-    margin: 5px;
+    margin: 3px;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -177,6 +223,18 @@ body{
     transition: 0.2s;
     align-items: center;
     justify-content: flex-end;
+    border: 0px;
+}
+
+.GitHubLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 
 
@@ -186,15 +244,21 @@ body{
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1094px) {
     .Main {
-      flex-direction: column;
+        flex-direction: column;
     }
-    .Content{
+
+    .Content {
         width: 100%;
     }
-    .SidebarContainer{
+
+    .SidebarContainer {
         width: 100%;
+        position: static;
     }
-  } 
-  
+
+    .Content {
+        margin-left: 0%;
+    }
+}
