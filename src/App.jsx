@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-    <div className='Main'>
-      <SideBar/>
-      <MainContent/>
-    </div>
+      <div className='Main'>
+        <SideBar />
+        <MainContent />
+      </div>
     </>
   )
 }
