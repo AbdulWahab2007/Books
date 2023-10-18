@@ -1,4 +1,8 @@
 import React from 'react'
+import {
+  BrowserRouter,
+  Link, Router
+} from "react-router-dom";
 
 export default function Card(props) {
   /*
@@ -7,16 +11,18 @@ export default function Card(props) {
   */
   return (
     <>
+    <BrowserRouter>
       <div className="card">
-        <a href="#">
+        <Link to={props.source} target='_blank'>
           <img className="Image" src={props.img} alt="" />
-        </a>
+        </Link>
         <div className="Desc">
-          <a href='#' className="Title">{props.title}</a>
-          <a href='#' className="Author">{props.author}</a>
+          <Link to={props.source} className="Title" target='_blank'>{props.title}</Link>
+          <Link to='/' className="Author">{props.author}</Link>
           < button className="Button">{props.category}</button>
         </div>
       </div>
+      </BrowserRouter>
     </>
   )
 }

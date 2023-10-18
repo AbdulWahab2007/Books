@@ -188,8 +188,8 @@ body {
 .CategoryBooks {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: auto;
+    padding-top: 20px;
 }
 
 .CategoryTop {

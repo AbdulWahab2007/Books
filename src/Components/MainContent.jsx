@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect , useState } from 'react'
 import Card from './Card'
 
 export default function MainContent() {
+  const [items, setItems] = useState([])
+  useEffect(() => {
+    LoadingCards();
+  }, [])
+
+  let url = "https://www.googleapis.com/books/v1/volumes?q=subject:fiction&startIndex=0&maxResults=6"
+  const LoadingCards = async ()=> {
+    let Data = await fetch(url)
+    let ParsedData = await Data.json()
+    setItems(ParsedData.items);
+  }
   return (
     <>
       <div className='Content'>
@@ -31,12 +42,14 @@ export default function MainContent() {
             </div>
           </div>
           <div className='CategoryBooks'>
-            <Card img="https://books.google.com/books/content?id=KVGd-NabpW0C&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="The Plague" author="Albert Camus" category="Fiction" />
-            <Card img="https://books.google.com/books/content?id=b6nCAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="Joseph Andrews" author="Henry Fielding" category="Fiction" />
-            <Card img="https://books.google.com/books/content?id=L88qEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="Sherlock Holmes - The Valley Of Fear" author="Arthur Conana Doyle" category="Fiction" />
-            <Card img="https://books.google.com/books/content?id=TayGZxfYF_EC&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="Future Shock" author="Alvin Toffler" category="Fiction" />
-            <Card img="https://books.google.com/books/content?id=In8mDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" title="How To Stop Time" author="Matt Haig" category="Fiction" />
-            <Card img="https://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" title="The Adventures Of Tom Sawyers" author="Mark Twain" category="Fiction" />
+
+          {items.map((element, index) => {
+              return <div key={index}>
+                <Card title = {element.volumeInfo.title} author={element.volumeInfo.authors} category={element.volumeInfo.categories} img={element.volumeInfo.imageLinks.smallThumbnail} source={element.volumeInfo.infoLink} />
+              </div>
+
+            })}
+
           </div>
         </div>
 
