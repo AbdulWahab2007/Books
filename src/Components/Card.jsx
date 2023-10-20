@@ -14,7 +14,7 @@ export default function Card(props) {
     <BrowserRouter>
       <div className="card">
         <Link to={props.source} target='_blank'>
-          <img className="Image" src={props.img} alt="" />
+          <img className="Image" src={props.img} alt="no image" />
         </Link>
         <div className="Desc">
           <Link to={props.source} className="Title" target='_blank'>{props.title}</Link>
