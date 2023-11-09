@@ -29,8 +29,8 @@ export default function Search() {
                 {
                 
                 searchItems.map((element, index) => {
-                        return ParsedData.totalItems == 0 ?<h2>No Results</h2> :<div key={index}>
-                        <Card title={element.volumeInfo.title} author={element.volumeInfo.authors} category={element.volumeInfo.categories} img={element.volumeInfo.imageLinks.thumbnail} source={element.volumeInfo.infoLink} />
+                        return <div key={index}>
+                        <Card title={element.volumeInfo.title} author={element.volumeInfo.authors} category={element.volumeInfo.categories} img={element.volumeInfo.imageLinks.smallThumbnail} source={element.volumeInfo.infoLink} />
                     
                     </div>
                     

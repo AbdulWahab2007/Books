@@ -24,7 +24,7 @@ body {
     padding: 30px;
     border: 0px;
     border-radius: 40px;
-    background-image: linear-gradient(to bottom, #b2cee2, white);
+    background-image: none;
 }
 
 .Image {
@@ -64,7 +64,6 @@ body {
 .Button {
     font-size: 15px;
     padding: 3px;
-    background-color: #fff9ea;
     border: 0px;
     border-radius: 50px;
     margin-top: 7px;

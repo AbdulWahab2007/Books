@@ -14,10 +14,10 @@ export default function SideBar() {
             <p className='Heading'>DISCOVER</p>
             <Link className='Categories' to="/search"><span style={{ marginRight: "15px" }}>🔍</span>Search</Link>
             <p className='Heading'>LIBRARY</p>
-            <Link className='Categories' to="/fiction"><span style={{ marginRight: "15px" }}>👽</span>Fiction</Link>
-            <Link className='Categories' to="/"><span style={{ marginRight: "15px" }}>📝</span>Poetry</Link>
-            <Link className='Categories' to="/"><span style={{ marginRight: "15px" }}>🔮</span>Fantasy</Link>
-            <Link className='Categories' to="/"><span style={{ marginRight: "15px" }}>💞</span>Romance</Link>
+            <Link className='Categories' to="fiction"><span style={{ marginRight: "15px" }}>👽</span>Fiction</Link>
+            <Link className='Categories' to="poetry"><span style={{ marginRight: "15px" }}>📝</span>Poetry</Link>
+            <Link className='Categories' to="fantasy"><span style={{ marginRight: "15px" }}>🔮</span>Fantasy</Link>
+            <Link className='Categories' to="romance"><span style={{ marginRight: "15px" }}>💞</span>Romance</Link>
 
           </div>
         </div>

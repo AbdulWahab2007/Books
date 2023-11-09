@@ -8,6 +8,7 @@ export default function CategoryTab(props) {
     const [index, setIndex] = useState(0)
     useEffect(() => {
         LoadingCards();
+
     }, [])
 
     let url = `https://www.googleapis.com/books/v1/volumes?q=subject:${props.CategoryName}&startIndex=${index}&maxResults=6`
@@ -31,12 +32,12 @@ export default function CategoryTab(props) {
             let ParsedData = await Data.json()
             setItems(ParsedData.items);
         }
-    }   
+    }
     return (
         <>
 
 
-            <div className="Category">
+            <div className="Category" id={props.CategoryName}>
                 <div className='CategoryTop'>
                     <h2>{props.CategoryName}</h2>
                     <div className="PrevNext">
